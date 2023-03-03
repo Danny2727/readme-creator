@@ -18,13 +18,13 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'installation',
+        name: 'install',
         message: "What are the installation instructions for your project?",
         validate: (value) => { if (value) { return true} else { return `Please give instructions on how to install your project.`}},
     },
     {
         type: 'input',
-        name: 'usage',
+        name: 'use',
         message: "What is the usage information for your project?",
         validate: (value) => { if (value) { return true} else { return `Please the usage information of the project.`}},
     },
@@ -39,15 +39,15 @@ const questions = [
         message: "What are the testing insturctions for your project?",
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'badge',
         message: 'What license are you using for your project?',
-        choices: [],
+        choices: ["Apache, MIT, GitHub"],
         validate: (value) => { if (value) {return true} else {return `Please choose a license for your project.`}}
     },
     {
         type: 'input',
-        name: 'username',
+        name: 'github',
         message: "What is your Github username?",
         validate: (value) => { if (value) { return true} else { return `Please enter a github username.`}},
     },
@@ -70,7 +70,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() { 
-    fileName = "Read.me",
+    fileName = "README.md",
     inquirer
     .prompt(questions)
     .then((data) => {
