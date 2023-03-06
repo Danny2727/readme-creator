@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('utils')
+const generateMarkdown = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -9,6 +9,7 @@ const questions = [
         name: 'title',
         message: 'What is the name of your project?',
         validate: (value) => { if (value) { return true } else { return `Please enter a project name.` } },
+        // validate: (value) => value ? true :  `Please enter a project name.`  ,
     },
     {
         type: 'input',
@@ -42,8 +43,8 @@ const questions = [
         type: 'list',
         name: 'badge',
         message: 'What license are you using for your project?',
-        choices: ["Apache, MIT, GitHub"],
-        validate: (value) => { if (value) {return true} else {return `Please choose a license for your project.`}}
+        choices: ["Apache" , "MIT", "GitHub", "None"],
+        // validate: (value) => { if (value) {return true} else {return `Please choose a license for your project.`}}
     },
     {
         type: 'input',
@@ -62,7 +63,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    let data = generateMarkdown(data)
+    data = generateMarkdown(data)
     fs.writeFile(fileName, data, (err) => 
     err ? console.log(err): console.log('You sucessfully created a Read.me file'),
     );
@@ -75,7 +76,7 @@ function init() {
     .prompt(questions)
     .then((data) => {
         console.log(data, "data")
-        writefile(fileName, data)
+        writeToFile(fileName, data)
     })
 }
 
