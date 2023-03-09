@@ -46,6 +46,7 @@ if(license !== "None") {
 - This project is protected under the ${license} license `
 }
 
+return section;
 // // return section;
 
 // // 2nd Refactor
