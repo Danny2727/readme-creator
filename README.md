@@ -38,5 +38,5 @@
 - https://github.com/Danny2727/readme-creator
 
 # Website Link 
-- https://danny2727.github.io/readme-creator/ (git hub repo)
+- https://danny2727.github.io/web.dev--readme-generator/ (git hub repo)
 - https://www.youtube.com/watch?v=eKq4QkeBC1s (video link)
