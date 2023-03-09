@@ -4,12 +4,12 @@
  - The purpose of this project is to create use node.js to create a professional read me file. The user opens up the integrated terminal and answers the questions. Which are used to genrate thier read me file.
 
 # Table of Contents 
--[Installation](#installation)
--[Usage](#usage)
--[Contirbuting](#contributions)
--[Test](#test)
--[Questions](#questions)
--[Website Link](#website-link)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contirbuting](#contributions)
+- [Test](#test)
+- [Questions](#questions)
+- [Website Link](#website-link)
 
 
 # Installation
@@ -23,14 +23,14 @@
 # Usage
  - Use the code to practice what you have learned about node.js to create a application.
  
- - 
 
 # Contributing 
-- none
+- Xandromus (Xander Rapstine)
+- gachoi06 (Grace Choi)
  
 
 # Test 
-- Type in "npm test" in the integrated terminal
+- Type in "node index.js" in integrated terminal 
 
 
 # Questions
@@ -38,4 +38,5 @@
 - https://github.com/Danny2727/readme-creator
 
 # Website Link 
-- 
+- https://danny2727.github.io/readme-creator/ (git hub repo)
+- https://www.youtube.com/watch?v=eKq4QkeBC1s (video link)

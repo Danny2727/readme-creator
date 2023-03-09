@@ -1,9 +1,9 @@
-#WEB DEV README GENERATOR    ![License Apache](https://img.shields.io/badge/license-Apache.blue.svg) 
+#WEB DEV README GENERATOR    ![License GitHub](https://img.shields.io/badge/license-MIT.green.svg) 
  
 
 
   # Description
- - use node.js to genrate a professional readme
+ - The project uses node.js to create a readme file.
 
 # Table of Contents 
 -[Installation](#installation)
@@ -11,24 +11,24 @@
 -[Contirbuting](#contributions)
 -[Test](#test)
 -[Questions](#questions)
--[license](#license)
+ 
 
 # Installation
- - git clone(github repo)
+ - git clone (github repo)
 
 # Usage
- - Use the project to implement skills you have learned about node.js
+ - Use the project to rpactice skills on node.js.
 
 # Contributing 
-- none 
+- Starter Code provided by Xandromus and gachichoi06.
  
 
 # Test 
-- npm test
+- Type in node index.js in intergated terminal.
 
 # License
-- This project is protected under the Apache license 
+- This project is protected under the GitHub license 
 
 # Questions
 - Danny2727
-- dannyedoaurd14@gmail.com
+- dannyedouard14@gmail.com
